@@ -1,0 +1,101 @@
+/* aref-ruqaa-ink-regular - latin */
+@font-face {
+  font-family: 'LT Comical';
+  font-style: normal;
+  /* font-weight: 400; */
+  src: url('../fonts/LT-Comical.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/LT-Comical.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+body {
+  background-repeat: no-repeat;
+  margin: 0;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  font-family: 'LT Comical';
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 200px;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  margin-bottom: 100px;
+  -webkit-background-clip: text;
+  background-image: url('../img/back.png');
+  background-position: 0 0;
+  animation: back 15s linear infinite;
+  transition: 1s ease;
+}
+
+@keyframes back {
+  50% {
+    background-position: 3000px 0;
+  }
+}
+
+h1:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li {
+  width: 100px;
+  margin-left: 20px;
+  transition: 1s ease;
+}
+
+ul li:hover {
+  transform: scale(1.4);
+  z-index: 2;
+}
